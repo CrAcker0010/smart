@@ -66,7 +66,7 @@
       transition: transform 0.2s;
     }
     .card:hover {
-      transform: translateY(-4px);
+      transform: scale(1.15);
     }
     .card img {
       width: 100%;
@@ -154,6 +154,19 @@
         color: #fff;
 
     }
+    .line{
+      position: relative;
+      width: max-content;
+    }
+    .ine::after{
+      content: '';
+      background-image: 2px solid linear-gradient(to right, blue , red);
+      /* border:  2px; */
+      /* border-color: linear-gradient(to right , blue , red); */
+      position:absolute;
+      bottom:0;
+      left:0;
+    }
   </style>
 </head>
 <body>
@@ -165,8 +178,10 @@
     </div>
     <button class="cart-btn">🛒 Cart</button>
   </header>
-  <hr>
-  <p class="tagline"><strong>Smart people choose S-Mart</strong></p>
+  <!-- <div class="line">
+My text
+  </div> -->
+    <p class="tagline"><strong>Smart people choose S-Mart</strong></p>
 <hr>
   <div class="container" id="product-list">
     <div class="card">
